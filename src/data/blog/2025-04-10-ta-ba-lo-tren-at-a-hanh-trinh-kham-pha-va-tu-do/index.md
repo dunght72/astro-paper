@@ -4,6 +4,7 @@ pubDatetime: 2025-04-10T14:21:40.815Z
 tags:
 - travel
 description: "Ta Ba Lô Trên Đất Á: Hành Trình Khám Phá và Tự Do"
+slug: "2025-04-10-ta-ba-lo-tren-at-a-hanh-trinh-kham-pha-va-tu-do"
 ---
 
 ## Ta Ba Lô Trên Đất Á: Hành trình khám phá bản thân qua những miền đất
