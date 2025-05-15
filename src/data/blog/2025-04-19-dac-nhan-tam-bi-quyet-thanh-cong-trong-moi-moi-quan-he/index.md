@@ -5,6 +5,7 @@ tags:
   - Self-Help
 
 description: "Đắc Nhân Tâm: Bí quyết thành công trong mọi mối quan hệ"
+slug: "2025-04-19-dac-nhan-tam-bi-quyet-thanh-cong-trong-moi-moi-quan-he"
 ---
 
 ![Ảnh minh họa](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Freviewsach.net%2Fwp-content%2Fuploads%2F2018%2F12%2Freview-sach-dac-nhan-tam.jpg&f=1&nofb=1&ipt=6c3682a76c3a3af6b69cc2cbe8d754d85952bbf2568a4112b67f5541eb072c4a) 
