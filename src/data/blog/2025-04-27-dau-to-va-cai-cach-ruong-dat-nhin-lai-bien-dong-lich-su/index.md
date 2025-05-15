@@ -5,6 +5,7 @@ tags:
   - History
 
 description: "Đấu Tố và Cải Cách Ruộng Đất: Nhìn Lại Biến Động Lịch Sử"
+slug: "2025-04-27-dau-to-va-cai-cach-ruong-dat-nhin-lai-bien-dong-lich-su"
 ---
 
 ![Ảnh minh họa](https://images.unsplash.com/photo-1652037967731-bdf6f34b9845?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzA0NDl8MHwxfHNlYXJjaHwxfHwlQzQlOTAlRTElQkElQTV1JTIwVCVFMSVCQiU5MSUyMHYlQzMlQTAlMjBDJUUxJUJBJUEzaSUyMEMlQzMlQTFjaCUyMFJ1JUUxJUJCJTk5bmclMjAlQzQlOTAlRTElQkElQTV0fGVufDB8fHx8MTc0NTcxOTI4MXww&ixlib=rb-4.0.3&q=80&w=400) 
