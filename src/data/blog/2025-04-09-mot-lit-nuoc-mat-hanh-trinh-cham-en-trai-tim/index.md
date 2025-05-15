@@ -3,6 +3,7 @@ title: "Một Lít Nước Mắt: Hành trình chạm đến trái tim
 "
 pubDatetime: 2025-04-09T14:28:29.817Z
 description: "Một Lít Nước Mắt: Hành trình chạm đến trái tim"
+slug: "2025-04-09-mot-lit-nuoc-mat-hanh-trinh-cham-en-trai-tim"
 ---
 
 ## Một lít nước mắt: Nhật ký của nghị lực và tình yêu cuộc sống
