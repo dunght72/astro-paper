@@ -7,6 +7,7 @@ tags:
   - Podcast
 description: "Podcast - Review Bố Già - Những trích đoạn hay"
 featured: true
+slug: "2025-05-14-bo-gia-va-nhung-trich-doan-noi-tieng"
 ---
 
 ## Table of contents
