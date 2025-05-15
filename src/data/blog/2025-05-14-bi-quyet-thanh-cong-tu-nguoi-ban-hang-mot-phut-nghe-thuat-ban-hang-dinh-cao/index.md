@@ -12,6 +12,7 @@ tags:
   - Spencer Johnson
 
 description: "Bí Quyết Thành Công Từ Người Bán Hàng Một Phút - Nghệ Thuật Bán Hàng Đỉnh Cao"
+slug: "2025-05-14-bi-quyet-thanh-cong-tu-nguoi-ban-hang-mot-phut-nghe-thuat-ban-hang-dinh-cao"
 ---
 
 ![Ảnh minh họa](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1632011603i/36183824.jpg) 
