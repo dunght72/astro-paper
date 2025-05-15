@@ -3,34 +3,16 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+Xin chào, mình là Dũng Hoàng 👨‍💻📚
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
+Mình là một coder sống trong thế giới của dòng lệnh, bug bất ngờ và… deadline không hồi kết. Ngoài những lúc gõ phím gõ lệnh, mình có một sở thích hơi “lỗi thời” nhưng cực kỳ thú vị: đọc sách – từ sách kỹ năng sống, tiểu thuyết, đến sách về công nghệ, mình đọc tất.
 
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+Blog *ReadVibe* này là một dự án nhỏ mình tạo ra vừa để thỏa mãn niềm đam mê đọc sách, vừa để AI có cơ hội trổ tài. Vâng, bạn không nhìn nhầm đâu: các bài viết giới thiệu sách ở đây được viết hoàn toàn tự động bởi AI, dưới sự giám sát nhẹ nhàng nhưng đầy quyền lực của mình. 🤖📖
 
-<div>
-  <img src="/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
-</div>
+Mục tiêu của blog là giới thiệu những cuốn sách hay, truyền cảm hứng đọc sách, và tiết kiệm thời gian lựa sách cho bạn. Mỗi bài viết đều ngắn gọn, dễ đọc, có thể kèm ảnh bìa và vài trích đoạn đáng giá – để bạn vừa đọc xong là muốn… chạy ra hiệu sách ngay!
 
-## Tech Stack
+Nếu bạn có cùng đam mê, có gợi ý sách hay, hay đơn giản là muốn “tám” chuyện công nghệ – đừng ngại gửi mail cho mình qua: dung@dunghoang.net .
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+![DungHoang.Net](https://i.ibb.co/WNC6dBZ7/image.png)
 
-## Features
-
-Here are certain features of this site.
-
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+Chào mừng bạn đến với góc nhỏ của mình trên Internet. Hy vọng bạn sẽ tìm thấy ít nhất một cuốn sách khiến bạn không thể rời mắt!
