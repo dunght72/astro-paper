@@ -6,6 +6,7 @@ tags:
   - Jo Hemmings
 
 description: "Exploring the Mind: Unpacking 'How Psychology Works'"
+slug: "2025-04-28-exploring-the-mind-unpacking-how-psychology-works"
 ---
 
 ![Ảnh minh họa](https://images.unsplash.com/photo-1529590003495-b2646e2718bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzA0NDl8MHwxfHNlYXJjaHwxfHxib29rJTJDcmVhZGluZ3xlbnwwfHx8fDE3NDU4NDgyMjN8MA&ixlib=rb-4.0.3&q=80&w=400) 
