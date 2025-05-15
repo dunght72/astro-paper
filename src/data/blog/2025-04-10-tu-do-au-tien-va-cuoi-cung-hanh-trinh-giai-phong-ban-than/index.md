@@ -4,6 +4,7 @@ pubDatetime: 2025-04-10T14:17:18.559Z
 tags:
    - Theosophy
 description: "Tự do đầu tiên và cuối cùng: Hành trình giải phóng bản thân"
+slug: "2025-04-10-tu-do-au-tien-va-cuoi-cung-hanh-trinh-giai-phong-ban-than"
 ---
 
 # Tự do đầu tiên và cuối cùng: Hành trình giải phóng tâm trí
