@@ -5,6 +5,7 @@ tags:
   - Học trò
   - Thiếu nhi
 description: "Tôi đi học - Khởi đầu cho hành trình khám phá tri thức"
+slug: "2025-04-10-toi-i-hoc-khoi-au-cho-hanh-trinh-kham-pha-tri-thuc"
 ---
 
 ### Tôi Đi Học - Hành trình vượt khó phi thường
