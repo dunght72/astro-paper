@@ -6,6 +6,7 @@ tags:
   - Daniel J. Levitin
 
 description: "Khám Phá Sức Mạnh Của Tư Duy Có Hệ Thống Qua Cuốn Sách Đỉnh Cao"
+slug: "2025-04-28-kham-pha-suc-manh-cua-tu-duy-co-he-thong-qua-cuon-sach-dinh-cao"
 ---
 
 ![Ảnh minh họa](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnewshop.vn%2Fpublic%2Fuploads%2Fproducts%2F6712%2Ftu-duy-co-he-thong.jpg&f=1&nofb=1&ipt=89c190d88a6c55cac14b5b3f4a2ba5b8d0c4a1c62b6cf6b7dc9304d200aa41ac) 
