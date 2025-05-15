@@ -6,6 +6,7 @@ tags:
   - George Ohsawa
 
 description: "Khám Phá Bí Ẩn Và Sức Mạnh Trong Những Chàng Trai Huyền Thoại"
+slug: "2025-05-12-kham-pha-bi-an-va-suc-manh-trong-nhung-chang-trai-huyen-thoai"
 ---
 
 ![Ảnh minh họa](https://i.imgur.com/mfSaDzm.jpeg)
