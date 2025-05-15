@@ -11,6 +11,7 @@ tags:
   - Novels
   - Haruki Murakami
 description: "Toru Watanabe, một chàng thanh niên 37 tuổi vừa mới đặt chân tới Hamburg, Đức. Khi bất chợt nghe..."
+slug: "2025-05-15-review-sach-rung-na-uy-cau-chuyen-tinh-yeu-va-mat-mat-xuc-dong-cua-haruki-murakami"
 ---
 
 ## Table of contents
