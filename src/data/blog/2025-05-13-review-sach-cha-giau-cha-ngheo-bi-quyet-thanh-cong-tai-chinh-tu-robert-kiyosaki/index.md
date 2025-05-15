@@ -2,7 +2,6 @@
 title: "Review Sách Cha Giàu Cha Nghèo: Bí Quyết Thành Công Tài Chính Từ Robert Kiyosaki"
 pubDatetime: 2025-05-13T06:08:00.264Z
 tags:
-  - 
   - Finance
   - Business
   - Nonfiction
