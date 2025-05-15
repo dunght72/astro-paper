@@ -6,6 +6,7 @@ tags:
   - Robert Twigger
 
 description: "Khám Phá Bí Ẩn Dòng Sông Đỏ Qua Cuốn Sách 'Red Nile'"
+slug: "2025-05-09-kham-pha-bi-an-dong-song-do-qua-cuon-sach-red-nile"
 ---
 
 ![Ảnh minh họa](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsalt.tikicdn.com%2Fts%2Freview%2Fb0%2Fe7%2F0c%2F155fd198a29540978cd0c9f081c703b7.jpg&f=1&ipt=59ad0d42e24389a1922f8878fb94e4967fa688bfd77dfd3194838a5491c50f6f)
