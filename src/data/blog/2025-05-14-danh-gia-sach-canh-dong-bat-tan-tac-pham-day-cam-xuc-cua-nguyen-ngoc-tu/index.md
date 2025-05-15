@@ -11,6 +11,7 @@ tags:
   - Classics
   - Nguyễn Ngọc Tư
 description: "Đánh Giá Sách Cánh Đồng Bất Tận: Tác Phẩm Đầy Cảm Xúc Của Nguyễn Ngọc Tư"
+slug: "2025-05-14-danh-gia-sach-canh-dong-bat-tan-tac-pham-day-cam-xuc-cua-nguyen-ngoc-tu"
 ---
 
 ![Ảnh minh họa](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1301137559i/7003187.jpg) 
