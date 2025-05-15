@@ -11,6 +11,7 @@ tags:
   - Audiobook
   - Eckhart Tolle
 description: "“Sức Mạnh Của Hiện Tại” – “The Power of Now” – tác phẩm nổi tiếng thế giới, được thời báo New York Times bình chọn là cuốn sách hay và bán chạy nhất, thực sự thiết thực và hữu ích cho cuộc sống tinh thần mọi người trong thời đại mới.Chân lý mà bậc thầy về tâm linh – Eckhart Tolle, truyền tải trong tác phẩm đặc biệt này chính là phân tích được nỗi đau khổ tinh thần của con người xảy ra triền miên khi luôn chìm đắm trong suy nghĩ về quá khứ và không nhận thức được giá trị và sức mạnh của Hiện tại. Khi tập trung vào hiện tại, bạn sẽ vượt lên tất cả những suy nghĩ tiêu cực, nhận diện và vượt qua được bản ngã của mình và tinh thần của bạn sẽ thanh thản hơn rất nhiều. Cuốn sách là người đồng hành giúp bạn tìm về với chính mình. Bạn sẽ bất ngờ khám phá ra chân giá trị quý báu mà chính bạn đang có sẵn nhưng bạn đã không nhận ra. Cuốn sách là kim chỉ nam cho tất cả chúng ta tìm lại giá trị đích thực của cuộc sống và cảm nhận những giá trị tươi đẹp như vốn có."
+slug: "2025-05-14-kham-pha-suc-manh-cua-hien-tai-bi-quyet-song-y-nghia-tu-cuon-sach-doi-doi"
 ---
 
 ![Ảnh minh họa](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1366545612i/17834716.jpg) 
