@@ -3,6 +3,7 @@ title: "Ta Ba Lô Trên Đất Á: Hành Trình Khám Phá và Kết Nối"
 pubDatetime: 2025-04-12T02:56:51.256Z
 
 description: "Ta Ba Lô Trên Đất Á: Hành Trình Khám Phá và Kết Nối"
+slug: "2025-04-12-ta-ba-lo-tren-dat-a-hanh-trinh-kham-pha-va-ket-noi"
 ---
 
 ![Ảnh minh họa](https://bigone.vn/uploads/images/review-ta-balo-tren-dat-a-cuon-sach-danh-cho-nguoi-dam-me-xe-dich-4.jpg) 
