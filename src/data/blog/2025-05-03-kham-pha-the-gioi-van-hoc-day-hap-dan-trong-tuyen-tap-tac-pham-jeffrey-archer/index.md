@@ -6,6 +6,7 @@ tags:
   - Jeffrey Archer
 
 description: "Khám Phá Thế Giới Văn Học Đầy Hấp Dẫn Trong Tuyển Tập Tác Phẩm Jeffrey Archer"
+slug: "2025-05-03-kham-pha-the-gioi-van-hoc-day-hap-dan-trong-tuyen-tap-tac-pham-jeffrey-archer"
 ---
 
 ![Ảnh minh họa](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.reader.com.vn%2Fuploads%2Fimages%2Fchi-thoi-gian-co-the-cat-loi-1.png&f=1&ipt=f0bf5ca532f2bcd717b41d4a4749bb68d1f95a419e1ef5128da15df14732c2d5)
