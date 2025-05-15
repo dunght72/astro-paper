@@ -10,6 +10,7 @@ tags:
   - Tragedy
   - Classics
   - Nguyễn Ngọc Tư
+description: "Cánh đồng bất tận là một hành trình không chỉ của hai chị em trong câu chuyện mà còn là hành trình của chính người đọc khi đối diện với những nỗi đau và hy vọng trong cuộc sống."
 ---
 
 ![Ảnh minh họa](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1301137559i/7003187.jpg) 
