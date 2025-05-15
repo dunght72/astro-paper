@@ -11,6 +11,7 @@ tags:
   - Classics
   - Agatha Christie
 description: "Mười người phát hiện rằng mình đã bị lừa ra đảo để trả giá cho tội ác đã gây ra, họ ứng với 10 bức tượng nhỏ đặt trên bàn ở phòng khách. Những ngày sau đó từng người lần lượt thiệt mạng tương tự cái cách bài đồng dao trong phòng mỗi người đã mô tả. Kỳ lạ hơn là sau khi một người qua đời, số tượng trong phòng khách bằng cách nào đó đều giảm đi một."
+featured: true
 ---
 
 ![Ảnh minh họa](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1370880841i/18053469.jpg) 
