@@ -5,6 +5,7 @@ tags:
 - Celery
 toc: true
 description: "Cơ Thể Tự Chữa Lành: Khám Phá Sức Mạnh Bên Trong Bạn"
+slug: "2025-04-10-co-the-tu-chua-lanh-kham-pha-suc-manh-ben-trong-ban"
 ---
 
 ### Cơ thể tự chữa lành: Khám phá sức mạnh tiềm ẩn
