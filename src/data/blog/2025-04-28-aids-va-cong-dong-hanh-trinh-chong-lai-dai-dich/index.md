@@ -5,6 +5,7 @@ tags:
   - AIDS (Disease)
 
 description: "AIDS và Cộng đồng: Hành Trình Chống Lại Đại Dịch"
+slug: "2025-04-28-aids-va-cong-dong-hanh-trinh-chong-lai-dai-dich"
 ---
 
 ![Ảnh minh họa](https://images.unsplash.com/photo-1581288797999-f3958d2b727f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzA0NDl8MHwxfHNlYXJjaHwxfHxBSURTJTIwdiVDMyVBMCUyMGMlRTElQkIlOTluZyUyMCVDNCU5MSVFMSVCQiU5M25nfGVufDB8fHx8MTc0NTgwNTY3N3ww&ixlib=rb-4.0.3&q=80&w=400) 
