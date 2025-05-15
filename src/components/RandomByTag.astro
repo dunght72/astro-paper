@@ -1,51 +1,54 @@
----
-import { getCollection } from 'astro:content'
-import { useState } from 'preact/hooks'
-import type { APIContext } from 'astro'
+// src/components/RandomByTag.tsx
+import { useState } from 'preact/hooks';
 
-const posts = await getCollection('blog');
-const visiblePosts = posts.filter(p => !p.data.draft);
-const tagsSet = new Set(visiblePosts.flatMap(p => p.data.tags || []));
-const allTags = Array.from(tagsSet);
----
+type Post = {
+  slug: string;
+  title: string;
+  description: string;
+  tags: string[];
+};
 
-<section class="random-by-tag" client:load>
-  <h2>Hôm nay bạn muốn đọc gì?</h2>
+type Props = {
+  posts: Post[];
+  tags: string[];
+};
 
-  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
-    {allTags.map(tag => (
-      <button
-        class="tag-button"
-        onclick={() => showRandomPost(tag)}
-        style="padding: 0.5rem 1rem; border: 1px solid #ccc; border-radius: 4px; background: white;"
-      >
-        {tag}
-      </button>
-    ))}
-  </div>
+export default function RandomByTag({ posts, tags }: Props) {
+  const [selectedPost, setSelectedPost] = useState<Post | null>(null);
 
-  <div id="random-result" style="margin-top: 2rem;"></div>
-
-  <script type="module">
-    const posts = {JSON.stringify(visiblePosts.map(p => ({
-      slug: p.slug,
-      title: p.data.title,
-      description: p.data.description,
-      tags: p.data.tags
-    })))};
-
-    function showRandomPost(tag) {
-      const matched = posts.filter(p => p.tags?.includes(tag));
-      if (matched.length === 0) {
-        document.getElementById('random-result').innerHTML = '<p>Không tìm thấy bài nào.</p>';
-        return;
-      }
-      const pick = matched[Math.floor(Math.random() * matched.length)];
-      document.getElementById('random-result').innerHTML = `
-        <h3><a href="/blog/${pick.slug}">${pick.title}</a></h3>
-        <p>${pick.description}</p>
-        <a href="/blog/${pick.slug}" class="button">Đọc ngay</a>
-      `;
+  const handleClick = (tag: string) => {
+    const filtered = posts.filter((p) => p.tags?.includes(tag));
+    if (filtered.length === 0) {
+      setSelectedPost(null);
+      return;
     }
-  </script>
-</section>
+    const pick = filtered[Math.floor(Math.random() * filtered.length)];
+    setSelectedPost(pick);
+  };
+
+  return (
+    <section class="random-by-tag">
+      <h2>Hôm nay bạn muốn đọc gì?</h2>
+      <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+        {tags.map((tag) => (
+          <button onClick={() => handleClick(tag)} class="tag-button">
+            {tag}
+          </button>
+        ))}
+      </div>
+      <div style={{ marginTop: '1rem' }}>
+        {selectedPost ? (
+          <>
+            <h3>
+              <a href={`/blog/${selectedPost.slug}`}>{selectedPost.title}</a>
+            </h3>
+            <p>{selectedPost.description}</p>
+            <a href={`/blog/${selectedPost.slug}`} class="button">Đọc ngay</a>
+          </>
+        ) : (
+          <p>Chọn thể loại để bắt đầu...</p>
+        )}
+      </div>
+    </section>
+  );
+}
