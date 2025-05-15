@@ -6,6 +6,7 @@ tags:
   - Bội Châu Phan
 
 description: "Khám Phá Di Sản Văn Học Qua Những Tác Phẩm Của Phan Bội Châu"
+slug: "2025-05-02-kham-pha-di-san-van-hoc-qua-nhung-tac-pham-cua-phan-boi-chau"
 ---
 
 ![Ảnh minh họa](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fe.baonghean.vn%2Fwp-content%2Fuploads%2F2023%2F01%2FPhan-B%25E1%25BB%2599i-Ch%25C3%25A2u-A3.png&f=1&ipt=941c17e2ac124f35aa01b47da250a981b36513bfbc3c901f7c4d87f453646ef6)
