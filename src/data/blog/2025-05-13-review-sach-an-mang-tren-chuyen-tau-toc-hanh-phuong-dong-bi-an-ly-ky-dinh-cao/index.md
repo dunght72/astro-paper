@@ -12,6 +12,7 @@ tags:
   - Agatha Christie
 
 description: "Án Mạng Trên Chuyến Tàu Tốc Hành Phương Đông là một cuốn tiểu thuyết trinh thám được độc giả quan tâm và cuốn hút bởi chính là yếu tố gây cấn, bất ngờ, sự logic và hợp lí.Một tên giết người trên chuyến tàu tốc hành Phương Đông được phát hiện đã bị giết chết bởi 12 nhát dao khác nhau. Phải chăng hung thủ là người ngoài hay chính 12 hành khách - vốn có mối thù với hắn - thông đồng với nhau để trả thù? Thám tử Poirot đã ra tay và vụ án dần dần được làm sáng tỏ. Kết quả thu được không chỉ đơn thuần là câu trả lời cho vấn đề hung thủ là ai, mà chính là lương tâm của con người trước ánh sáng của công lí đã mở ra, anh lại tìm đến bên cô để cùng nhìn về một khoảng trời bình yên."
+slug: "2025-05-13-review-sach-an-mang-tren-chuyen-tau-toc-hanh-phuong-dong-bi-an-ly-ky-dinh-cao"
 ---
 
 ![Ảnh minh họa](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1630686515i/25461269.jpg) 
