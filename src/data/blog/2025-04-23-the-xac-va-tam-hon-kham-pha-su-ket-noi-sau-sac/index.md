@@ -5,6 +5,7 @@ tags:
   - Fiction
 
 description: "Thể Xác Và Tâm Hồn: Khám Phá Sự Kết Nối Sâu Sắc"
+slug: "2025-04-23-the-xac-va-tam-hon-kham-pha-su-ket-noi-sau-sac"
 ---
 
 ![Ảnh minh họa](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.netabooks.vn%2FData%2FSites%2F1%2Fmedia%2Fsach-2021%2Fthe-xac-va-tam-hon%2Fthe-xac-va-tam-hon-02.jpg&f=1&nofb=1&ipt=5d99f44d1c004ab3c8f78a9d080ef45cbd30ccb7fc7a6c95c07fffeeb1cb3396) 
