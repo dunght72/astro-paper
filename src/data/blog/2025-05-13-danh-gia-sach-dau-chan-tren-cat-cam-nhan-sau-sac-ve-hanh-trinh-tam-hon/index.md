@@ -9,6 +9,7 @@ tags:
   - Mika Waltari
 
 description: "Dấu chân trên cát là tác phẩm được dịch giả Nguyên Phong phóng tác kể về xã hội Ai Cập thế kỷ thứ XIV trước CN, qua lời kể của nhân vật chính - Sinuhe.Ngày nay, người ta biết đến triều đại các vua chúa Ai Cập thời cổ qua sách vở của người Hy Lạp."
+slug: "2025-05-13-danh-gia-sach-dau-chan-tren-cat-cam-nhan-sau-sac-ve-hanh-trinh-tam-hon"
 ---
 
 ![Ảnh minh họa](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1631547225i/35960122.jpg) 
