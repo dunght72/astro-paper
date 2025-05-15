@@ -12,6 +12,7 @@ tags:
   - Sarah Knight
 
 description: "Đánh Giá Sách Get Your Sh*t Together: Bí Quyết Hoàn Thành Công Việc và Sống Theo Ý Muốn"
+slug: "2025-05-14-danh-gia-sach-get-your-sht-together-bi-quyet-hoan-thanh-cong-viec-va-song-theo-y-muon"
 ---
 
 ![Ảnh minh họa](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1482921846i/31111142.jpg) 
