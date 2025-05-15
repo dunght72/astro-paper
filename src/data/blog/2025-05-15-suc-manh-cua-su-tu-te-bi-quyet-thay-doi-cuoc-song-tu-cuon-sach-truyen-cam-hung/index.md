@@ -11,6 +11,7 @@ tags:
   - Management
   - Linda Kaplan Thaler
 description: "Trong kinh doanh, tử tế không có nghĩa là thiếu quyết đoán hay cả nể… chẳng dễ mà thành được người tử tế, nhưng một khi đã được rồi thì bạn sẽ:Nổi trội hơnKiếm được nhiều tiền hơnVui hơnKhỏe mạnh hơnSống lâu hơn để tận hưởng bốn điều kể trên. Tử tế là một sức mạnh không ngờ!"
+slug: "2025-05-15-suc-manh-cua-su-tu-te-bi-quyet-thay-doi-cuoc-song-tu-cuon-sach-truyen-cam-hung"
 ---
 
 ![Ảnh minh họa](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1426603491i/25161477.jpg) 
