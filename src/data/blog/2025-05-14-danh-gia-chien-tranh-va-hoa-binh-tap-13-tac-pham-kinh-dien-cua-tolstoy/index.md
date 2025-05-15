@@ -10,6 +10,7 @@ tags:
   - Historical
   - Leo Tolstoy
 description: "Cuốn sách đã làm tôi xúc động mạnh. Trong cuốn tiểu thuyết, biện chứng tâm hồn đã hòa nhập với triết lý, với sự vận động của lịch sử, và trong sự hòa hợp đó kết tinh rất nhiều vấn đề trọng yếu của thời đại chúng ta - Nhà văn, nhà thơ Nguyễn Đinh Thi"
+slug: "2025-05-14-danh-gia-chien-tranh-va-hoa-binh-tap-13-tac-pham-kinh-dien-cua-tolstoy"
 ---
 
 ![Ảnh minh họa](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1518599327i/38542943.jpg) 
