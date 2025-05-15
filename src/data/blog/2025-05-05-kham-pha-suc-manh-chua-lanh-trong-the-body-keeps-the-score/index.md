@@ -5,6 +5,7 @@ tags:
   - Bessel Van Der Kolk
 
 description: "Khám Phá Sức Mạnh Chữa Lành Trong The Body Keeps the Score"
+slug: "2025-05-05-kham-pha-suc-manh-chua-lanh-trong-the-body-keeps-the-score"
 ---
 
 ![Ảnh minh họa](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.wixstatic.com%2Fmedia%2F67d4e8_a74c11890f8c4772912b2f1b0b7d5c13~mv2.png%2Fv1%2Ffill%2Fw_1000%2Ch_563%2Cal_c%2Cusm_0.66_1.00_0.01%2F67d4e8_a74c11890f8c4772912b2f1b0b7d5c13~mv2.png&f=1&ipt=22669c8e0c6d73cd99c7ac1bbf0a29ec29f81a2a8b29e51d678f7ad90293e5b7)
