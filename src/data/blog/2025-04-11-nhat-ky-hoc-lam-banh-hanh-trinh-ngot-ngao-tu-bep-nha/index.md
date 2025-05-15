@@ -5,6 +5,7 @@ tags:
   - Baking
 
 description: "Nhật Ký Học Làm Bánh: Hành Trình Ngọt Ngào Từ Bếp Nhà"
+slug: "2025-04-11-nhat-ky-hoc-lam-banh-hanh-trinh-ngot-ngao-tu-bep-nha"
 ---
 
 
