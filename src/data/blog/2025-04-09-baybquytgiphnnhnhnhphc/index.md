@@ -1,7 +1,7 @@
 ---
 title: "Ba̓y bí quyết giúp hôn nhân hạnh phúc"
 pubDatetime: 2025-04-09
-toc: true
+description: "Bạn có bao giờ tự hỏi điều gì tạo nên một cuộc hôn nhân bền vững và hạnh phúc? Giữa những bộn bề cuộc sống, những thử thách và cả những bất đồng không tránh khỏi, làm thế nào để giữ lửa tình yêu và xây dựng một mái ấm thực sự? "Bảy Bí Quyết Giúp Hôn Nhân Hạnh Phúc" của John Gottman sẽ là người bạn đồng hành đáng tin cậy trên hành trình đó. Cuốn sách không chỉ đưa ra những lời khuyên suông, mà còn dựa trên những nghiên cứu khoa học sâu rộng về các mối quan hệ, mang đến những giải pháp cụ thể và dễ áp dụng."
 ---
 
 
