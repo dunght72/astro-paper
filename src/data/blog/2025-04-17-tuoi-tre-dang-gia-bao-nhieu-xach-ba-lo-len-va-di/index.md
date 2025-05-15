@@ -5,6 +5,7 @@ tags:
   - Africa
 
 description: "Tuổi trẻ đáng giá bao nhiêu? Xách ba lô lên và đi!"
+slug: "2025-04-17-tuoi-tre-dang-gia-bao-nhieu-xach-ba-lo-len-va-di"
 ---
 
 ![Ảnh minh họa](https://images.unsplash.com/photo-1592823908990-4688140172d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzA0NDl8MHwxfHNlYXJjaHwxfHxYJUMzJUExY2glMjBiYSUyMGwlQzMlQjQlMjBsJUMzJUFBbiUyMHYlQzMlQTAlMjAlQzQlOTFpfGVufDB8fHx8MTc0NDg1NTI2NHww&ixlib=rb-4.0.3&q=80&w=400) 
