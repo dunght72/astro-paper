@@ -12,6 +12,7 @@ tags:
   - Charles Duhigg
 
 description: "Về cơ bản, người lớn và trẻ em không khác nhau là mấy. Bởi hầu hết những hành động hàng ngày của chúng ta đều là sản phẩm của thói quen vô thức. Thế nhưng không phải cá nhân, tổ chức nào cũng có được thành công. Đó là vì mỗi người có những thói quen riêng. Vậy thói quen nào mới giúp bạn thành công? Trong cuốn sách “Sức mạnh của thói quen”, Charles Duhigg sẽ giải đáp thắc mắc ấy."
+slug: "2025-05-13-suc-manh-cua-thoi-quen-bi-quyet-thay-doi-cuoc-song-tu-cuon-sach-bestseller"
 ---
 
 ![Ảnh minh họa](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1630653592i/27870217.jpg) 
