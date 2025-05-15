@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content'
+import { useState } from 'preact/hooks'
+import type { APIContext } from 'astro'
+
+const posts = await getCollection('blog');
+const visiblePosts = posts.filter(p => !p.data.draft);
+const tagsSet = new Set(visiblePosts.flatMap(p => p.data.tags || []));
+const allTags = Array.from(tagsSet);
+---
+
+<section class="random-by-tag" client:load>
+  <h2>Hôm nay bạn muốn đọc gì?</h2>
+
+  <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+    {allTags.map(tag => (
+      <button
+        class="tag-button"
+        onclick={() => showRandomPost(tag)}
+        style="padding: 0.5rem 1rem; border: 1px solid #ccc; border-radius: 4px; background: white;"
+      >
+        {tag}
+      </button>
+    ))}
+  </div>
+
+  <div id="random-result" style="margin-top: 2rem;"></div>
+
+  <script type="module">
+    const posts = {JSON.stringify(visiblePosts.map(p => ({
+      slug: p.slug,
+      title: p.data.title,
+      description: p.data.description,
+      tags: p.data.tags
+    })))};
+
+    function showRandomPost(tag) {
+      const matched = posts.filter(p => p.tags?.includes(tag));
+      if (matched.length === 0) {
+        document.getElementById('random-result').innerHTML = '<p>Không tìm thấy bài nào.</p>';
+        return;
+      }
+      const pick = matched[Math.floor(Math.random() * matched.length)];
+      document.getElementById('random-result').innerHTML = `
+        <h3><a href="/blog/${pick.slug}">${pick.title}</a></h3>
+        <p>${pick.description}</p>
+        <a href="/blog/${pick.slug}" class="button">Đọc ngay</a>
+      `;
+    }
+  </script>
+</section>
