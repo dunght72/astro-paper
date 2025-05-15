@@ -3,6 +3,7 @@ title: "Tuổi Trẻ Đáng Giá Bao Nhiêu: Bí Quyết Đầu Tư Cho Tương 
 pubDatetime: 2025-04-15T04:30:03.408Z
 
 description: "Tuổi Trẻ Đáng Giá Bao Nhiêu: Bí Quyết Đầu Tư Cho Tương Lai"
+slug: "2025-04-15-tuoi-tre-dang-gia-bao-nhieu-bi-quyet-dau-tu-cho-tuong-lai"
 ---
 
 ![Ảnh minh họa](https://images.unsplash.com/photo-1586953208479-8684e036d889?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3MzA0NDl8MHwxfHNlYXJjaHwxfHxUdSVFMSVCQiU5NWklMjB0ciVFMSVCQSVCQiUyMCVDNCU5MSVDMyVBMW5nJTIwZ2klQzMlQTElMjBiYW8lMjBuaGklQzMlQUF1JTNGfGVufDB8fHx8MTc0NDY5MTQwM3ww&ixlib=rb-4.0.3&q=80&w=400) 
