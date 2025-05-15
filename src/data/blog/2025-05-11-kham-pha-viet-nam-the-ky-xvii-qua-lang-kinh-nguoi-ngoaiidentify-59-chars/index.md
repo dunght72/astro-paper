@@ -5,6 +5,7 @@ tags:
   - History
 
 description: "Khám Phá Việt Nam Thế Kỷ XVII Qua Lăng Kính Người Nước Ngoài"
+slug: "2025-05-11-kham-pha-viet-nam-the-ky-xvii-qua-lang-kinh-nguoi-ngoaiidentify-59-chars"
 ---
 
 ![Ảnh minh hoạ](https://i.imgur.com/2jU3F9o.jpeg)
