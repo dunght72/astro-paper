@@ -6,6 +6,7 @@ tags:
   - Nguyễn Hữu Sơn
 
 description: "Khám Phá Việt Nam Qua Trang Sách Du Ký Hấp Dẫn"
+slug: "2025-05-07-kham-pha-viet-nam-qua-trang-sach-du-ky-hap-dan"
 ---
 
 ![Ảnh minh họa](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffile.hstatic.net%2F200000692705%2Ffile%2Fdu-ky-viet-nam-tren-nam-phong-ta_grande.jpg&f=1&nofb=1&ipt=40b81ce90e3d4aee1e2cd9f7a45a60d983d0c7a5d4fa4d4f960138f9db78e89c) 
