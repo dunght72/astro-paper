@@ -6,6 +6,7 @@ tags:
   - Violeta Babić
 
 description: "Khám Phá Cẩm Nang Con Trai: Hành Trình Trở Thành Phiên Bản Tốt Nhất Của Chính Mình"
+slug: "2025-05-08-kham-pha-cam-nang-con-trai-hanh-trinh-tro-thanh-phien-ban-tot-nhat-cua-chinh-minh"
 ---
 
 ![Ảnh minh họa](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn0.fahasa.com%2Fmedia%2Fcatalog%2Fproduct%2Fc%2Fa%2Fcam-nang-con-trai_2.jpg&f=1&ipt=4aeed1d0d30534ca5545fc8040f69819897a0caa0c8d4e36caec01906d2c3bd8)
