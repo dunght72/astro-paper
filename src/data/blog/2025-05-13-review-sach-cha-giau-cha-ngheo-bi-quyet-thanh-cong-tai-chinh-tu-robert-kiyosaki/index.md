@@ -12,6 +12,7 @@ tags:
   - Robert T. Kiyosaki
 
 description: "Trong thời buổi kinh tế đang ngày càng bão hòa và khó khăn, thì việc tạo dựng sự nghiệp thành công cho bản thân mỗi người là điều không dễ dàng gì. Không phải là bạn cứ có kiến thức hay nhiều tiền là sẽ trở nên giàu có ngay lập tức, tất cả điều cần có bí quyết và một lộ trình đi đến thành công một cách đúng hướng.Đó chính là một trong những thông điệp mà cuốn sách Cha giàu cha nghèo của tác giả Robert Kiyosaki muốn gửi gắm đến các độc giả của mình"
+slug: "2025-05-13-review-sach-cha-giau-cha-ngheo-bi-quyet-thanh-cong-tai-chinh-tu-robert-kiyosaki"
 ---
 
 ![Ảnh minh họa](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1630651787i/35180917.jpg) 
