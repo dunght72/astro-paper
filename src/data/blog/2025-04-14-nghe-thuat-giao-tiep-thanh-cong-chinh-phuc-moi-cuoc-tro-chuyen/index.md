@@ -3,6 +3,7 @@ title: "Nghệ Thuật Giao Tiếp Thành Công: Chinh Phục mọi cuộc trò 
 pubDatetime: 2025-04-14T02:00:32.903Z
 
 description: "Nghệ Thuật Giao Tiếp Thành Công: Chinh Phục mọi cuộc trò chuyện"
+slug: "2025-04-14-nghe-thuat-giao-tiep-thanh-cong-chinh-phuc-moi-cuoc-tro-chuyen"
 ---
 
 ![Ảnh minh họa](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsachnoi.cc%2Fwp-content%2Fuploads%2F2022%2F07%2FSach-Noi-Nghe-Thuat-Giao-Tiep-De-Thanh-Cong-Leil-Lowndes-audio-book-sachnoi.cc-03.jpg&f=1&nofb=1&ipt=60fcf58a402bc72bc621f12e4f3a8d4e52f74a65076b82fb4e75c2685d4e1cd8) 
