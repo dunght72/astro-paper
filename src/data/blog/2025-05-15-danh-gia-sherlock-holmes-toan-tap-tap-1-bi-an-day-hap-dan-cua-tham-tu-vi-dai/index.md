@@ -11,6 +11,7 @@ tags:
   - Short Stories
   - Arthur Conan Doyle
 description: "Sherlock Holmes Toàn Tập (Tập 1)Sherlock Holmes là tác phẩm nổi tiếng của nhà văn người Scotland..."
+slug: "2025-05-15-danh-gia-sherlock-holmes-toan-tap-tap-1-bi-an-day-hap-dan-cua-tham-tu-vi-dai"
 ---
 
 ## Table of contents
