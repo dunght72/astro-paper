@@ -5,6 +5,7 @@ tags:
   - Theatre
   - Lưu Quang Vũ
 description: "“Trong quan niệm của tôi, thơ và kịch rất gần nhau. Có lẽ thơ với kịch còn gần nhau hơn là thơ với văn xuôi. Đều là hai thể loại lớn và khó của văn học, thơ và kịch đều là sự sống và thế giới bên trong của con người ở dạng tinh chất, cô đọng và mãnh liệt nhất - Nhà văn Hồ Anh Thái"
+slug: "2025-05-15-review-hon-truong-ba-da-hang-thit-tuyen-kich-luu-quang-vu-day-sau-sac"
 ---
 
 ## Table of contents
