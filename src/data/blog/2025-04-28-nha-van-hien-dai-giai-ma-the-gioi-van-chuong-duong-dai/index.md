@@ -5,6 +5,7 @@ tags:
   - Vietnamese literature
 
 description: "Nhà văn hiện đại: Giải mã thế giới văn chương đương đại"
+slug: "2025-04-28-nha-van-hien-dai-giai-ma-the-gioi-van-chuong-duong-dai"
 ---
 
 ![Ảnh minh họa](https://product.hstatic.net/200000481913/product/1e8a576d-63f6-45a4-9f33-0e10faa0c8b1_769c9251f94843d19d3d557a9c9e2164_master.jpg)
