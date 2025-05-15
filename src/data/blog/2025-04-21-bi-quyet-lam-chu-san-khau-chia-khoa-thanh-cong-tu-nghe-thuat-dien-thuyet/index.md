@@ -5,6 +5,7 @@ tags:
   - Business & Economics
 
 description: "Bí quyết làm chủ sân khấu: Chìa khóa thành công từ Nghệ thuật diễn thuyết"
+slug: "2025-04-21-bi-quyet-lam-chu-san-khau-chia-khoa-thanh-cong-tu-nghe-thuat-dien-thuyet"
 ---
 
 ![Ảnh minh họa](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn0.fahasa.com%2Fmedia%2Fcatalog%2Fproduct%2Fn%2Fg%2Fnghe_thuat_dien_thuyet_de_thanh_cong_2_2020_06_16_13_57_46.png&f=1&nofb=1&ipt=b7b3dfa0aa1aad8a5ad6f93b6418c09344ecdceb2e12a5e732f2f13b35db40c3) 
