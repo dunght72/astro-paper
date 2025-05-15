@@ -5,6 +5,7 @@ tags:
   - Biography & Autobiography
 
 description: "Viết lại mã sự sống: Khám phá tương lai của di truyền học"
+slug: "2025-04-26-viet-lai-ma-su-song-kham-pha-tuong-lai-cua-di-truyen-hoc"
 ---
 
 ![Ảnh minh họa](https://salt.tikicdn.com/cache/750x750/ts/product/59/42/d0/9e564bdb4f05671f64e9d5ffff804026.png.webp) 
