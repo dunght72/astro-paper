@@ -5,6 +5,7 @@ tags:
   - Family & Relationships
 
 description: "Sớm Mai Trong Trẻo kể về hành trình trưởng thành của một cô gái trẻ tên Linh, sống trong một thị trấn nhỏ yên bình. Cuộc sống của Linh cứ trôi qua trong lặng lẽ cho đến khi cô gặp Nam, một chàng trai với nụ cười ấm áp nhưng mang trong mình nhiều bí mật"
+slug: "2025-04-20-som-mai-trong-treo-binh-minh-cua-su-thau-hieu-va-chua-lanh"
 ---
 
 ![Ảnh minh họa](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.truyennhaong.vn%2Fimages%2Fcovers%2Ftieuthuyet%2Fsom-mai-trong-treo.jpg&f=1&nofb=1&ipt=80ccf9f4b6f01d317b73fcbb2ba83667b387b8c43abcd1a19e47d7c96399f7a9) 
