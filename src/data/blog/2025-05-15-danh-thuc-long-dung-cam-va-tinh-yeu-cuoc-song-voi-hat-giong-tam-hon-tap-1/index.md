@@ -5,7 +5,7 @@ tags:
   - Self Help
   - Nonfiction
   - Nhiều tác giả
-description: "Cuốn sách sẽ là người bạn đồng hành cùng độc giả vượt qua những khó khăn thử thách trong cuộc sống thường ngày như nỗi mất mát, nỗi đau tổn thương tinh thần, tình cảm, niềm tin, bệnh tật, những thăng trầm trên bước đường theo đuổi ước mơ của cuộc đời hay vươn lên cho cuộc sống tốt đẹp hơn.Qua những sự kiện bất hạnh, những câu chuyện bình thường, những người bình dị... bạn đọc sẽ cùng suy ngẫm, chiêm nghiệm, khám phá và tìm thấy câu châm ngôn cuộc sống của mình!"Nếu có ai đó ban cho tôi một cuộc sống không gặp một trở ngại nào thì hấp dẫn thật đấy, nhưng tôi sẽ khước từ vì khi ấy tối sẽ không còn học được điều gì từ cuộc sống nữa."(Allyson Jones)"
+description: "Cuốn sách sẽ là người bạn đồng hành cùng độc giả vượt qua những khó khăn thử thách trong cuộc sống thường ngày như nỗi mất mát, nỗi đau tổn thương tinh thần, tình cảm, niềm tin, bệnh tật, những thăng trầm trên bước đường theo đuổi ước mơ của cuộc đời hay vươn lên cho cuộc sống tốt đẹp hơn.Qua những sự kiện bất hạnh, những câu chuyện bình thường, những người bình dị... bạn đọc sẽ cùng suy ngẫm, chiêm nghiệm, khám phá và tìm thấy câu châm ngôn cuộc sống của mình!Nếu có ai đó ban cho tôi một cuộc sống không gặp một trở ngại nào thì hấp dẫn thật đấy, nhưng tôi sẽ khước từ vì khi ấy tối sẽ không còn học được điều gì từ cuộc sống nữa.(Allyson Jones)"
 ---
 
 ![Ảnh minh họa](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1483018129i/22741116.jpg) 
