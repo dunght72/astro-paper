@@ -6,6 +6,7 @@ tags:
   - Jeffrey Pfeffer
 
 description: "Hiểu Bản Chất Quyền Lực Qua Cuốn Sách Quyền Lực - Vì Sao Người Có Kẻ Không?"
+slug: "2025-04-29-hieu-ban-chat-quyen-luc-qua-cuon-sach-quyen-luc-vi-sao-nguoi-co-ke-khong"
 ---
 
 ![Ảnh minh hoạ](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsachkinhdoanh.com.vn%2Fwp-content%2Fuploads%2F2018%2F03%2Freview-sach-quyen-lucFILEminimizer.jpg&f=1&ipt=2c0356c1386db614e534a67646cc94afe42a8c76aac5234c7337b9f740e60488)
