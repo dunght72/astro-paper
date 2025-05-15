@@ -6,6 +6,7 @@ tags:
   - David Quammen
 
 description: "Nguồn Gốc Dịch Bệnh: Hé lộ sự thật chấn động về đại dịch"
+slug: "2025-04-28-nguon-goc-dich-benh-he-lo-su-that-chan-dong-ve-dai-dich"
 ---
 
 ![Minh hoạ](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbizweb.dktcdn.net%2F100%2F180%2F408%2Fproducts%2Fnguoc-goc-dich-benh-02.jpg%3Fv%3D1614192711583&f=1&ipt=ad82b773eedecadb2a9b27c2c40561f75560ba96351552b0d3b616c119ce7247)
