@@ -5,6 +5,7 @@ tags:
   - Địa Lý
   - Việt Nam
 description: "Khám Phá Lịch Sử và Văn Hóa Qua Cuốn Sách Địa Chí Thái Nguyên"
+slug: "2025-05-06-kham-pha-lich-su-va-van-hoa-qua-cuon-sach-dia-chi-thai-nguyen"
 ---
 
 ![Ảnh minh họa](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.tgdd.vn%2FFiles%2F2021%2F06%2F24%2F1362989%2Ftop-16-dia-diem-du-lich-thai-nguyen-dep-thu-hut-khach-202305091631037855.jpg&f=1&nofb=1&ipt=5a1280c4a1e7cd0b02c31e61364643f0b68dc425a92957303498cdcac63c3112) 
