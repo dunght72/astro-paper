@@ -1,0 +1,126 @@
+---
+import { useState } from 'react';
+
+// Chủ đề và tags ánh xạ
+const TOPICS = {
+  "Trinh thám": ["Crime", "Detective"],
+  "Khoa học": ["Science", "Non-fiction"],
+  "Tình cảm": ["Romance", "Love"],
+  // Thêm các chủ đề khác nếu cần
+};
+
+// Giả sử bạn import dữ liệu sách từ file JSON build sẵn (có thể sinh ra từ n8n)
+import books from '../data/books.json';
+
+// Lấy danh sách chủ đề
+const topicList = Object.keys(TOPICS);
+
+// Hàm recommend sách
+function recommendBook(topic) {
+  if (!topic) return null;
+  const tags = TOPICS[topic];
+  const filtered = books.filter(book =>
+    book.tags.some(tag => tags.includes(tag))
+  );
+  if (filtered.length === 0) return null;
+  // Chọn ngẫu nhiên 1 cuốn sách
+  return filtered[Math.floor(Math.random() * filtered.length)];
+}
+
+// State cho chủ đề và sách được chọn
+const [selectedTopic, setSelectedTopic] = useState('');
+const [recommended, setRecommended] = useState(null);
+
+function handleChange(e) {
+  const topic = e.target.value;
+  setSelectedTopic(topic);
+  setRecommended(recommendBook(topic));
+}
+---
+
+<div class="recommend-container">
+  <label for="topic-select" class="recommend-label">Chọn chủ đề:</label>
+  <select id="topic-select" class="recommend-select" on:change={handleChange}>
+    <option value="">-- Chọn --</option>
+    {topicList.map(topic => (
+      <option value={topic} selected={selectedTopic === topic}>{topic}</option>
+    ))}
+  </select>
+
+  {recommended && (
+    <div class="recommend-card">
+      <h3 class="recommend-title">{recommended.title}</h3>
+      {recommended.cover && (
+        <img src={recommended.cover} alt={recommended.title} class="recommend-cover" />
+      )}
+      <p class="recommend-desc">{recommended.description}</p>
+      <div class="recommend-tags">
+        {recommended.tags.map(tag => (
+          <span class="recommend-tag">{tag}</span>
+        ))}
+      </div>
+      <a href={`/books/${recommended.slug}`} class="recommend-link">Xem review</a>
+    </div>
+  )}
+</div>
+
+<style>
+.recommend-container {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  max-width: 420px;
+}
+.recommend-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.recommend-select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  margin-bottom: 1rem;
+}
+.recommend-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.recommend-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.recommend-cover {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+.recommend-desc {
+  font-size: 0.98rem;
+  margin-bottom: 0.5rem;
+}
+.recommend-tags {
+  margin-bottom: 0.5rem;
+}
+.recommend-tag {
+  display: inline-block;
+  background: #e0e7ff;
+  color: #3730a3;
+  border-radius: 4px;
+  padding: 0.2em 0.6em;
+  font-size: 0.85em;
+  margin-right: 0.25em;
+}
+.recommend-link {
+  color: #2563eb;
+  text-decoration: underline;
+  font-weight: 500;
+}
+</style>
