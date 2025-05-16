@@ -41,49 +41,42 @@ const books = posts.map(post => ({
 <script type="module">
   const books = JSON.parse(document.getElementById('books-data').textContent);
   const TOPICS = JSON.parse(document.getElementById('topics-data').textContent);
-  const resultDiv = document.getElementById('recommend-result');
 
   let currentTopic = "";
   let currentFiltered = [];
   let currentBook = null;
 
-  console.log("🔁 INIT: Loaded books:", books.length);
-  console.log("🔁 INIT: Topics:", Object.keys(TOPICS));
+  // ⚙️ Khởi tạo recommend logic
+  function initRecommend() {
+    const resultDiv = document.getElementById('recommend-result');
 
-  function pickRandom() {
-    if (!currentFiltered.length) return null;
-    const pick = currentFiltered[Math.floor(Math.random() * currentFiltered.length)];
-    console.log("🎲 Random pick:", pick.title);
-    return pick;
-  }
+    function pickRandom() {
+      if (!currentFiltered.length) return null;
+      const pick = currentFiltered[Math.floor(Math.random() * currentFiltered.length)];
+      console.log("🎲 Random pick:", pick.title);
+      return pick;
+    }
 
-  function showBook(book) {
-    currentBook = book;
-
-    console.log("📚 Show book:", book.title);
-
-    resultDiv.innerHTML = `
-      <div class="fade-in">
-        <p class="book-title">📖 ${book.title}</p>
-        <div class="recommend-actions">
-          <a href="${book.href}" class="recommend-btn">📖 Xem ngay</a>
-          <button id="change-book-btn" class="recommend-btn alt">🔁 Đổi sách</button>
+    function showBook(book) {
+      currentBook = book;
+      resultDiv.innerHTML = `
+        <div class="fade-in">
+          <p class="book-title">📖 ${book.title}</p>
+          <div class="recommend-actions">
+            <a href="${book.href}" class="recommend-btn">📖 Xem ngay</a>
+            <button id="change-book-btn" class="recommend-btn alt">🔁 Đổi sách</button>
+          </div>
         </div>
-      </div>
-    `;
-
-    const changeBtn = document.getElementById("change-book-btn");
-    if (changeBtn) {
-      changeBtn.addEventListener("click", () => {
+      `;
+      document.getElementById("change-book-btn")?.addEventListener("click", () => {
         const newBook = pickRandom();
         if (newBook && newBook.href !== currentBook.href) {
           showBook(newBook);
         }
       });
     }
-  }
 
-  function attachListeners() {
+    // Gán sự kiện cho các nút chủ đề
     document.querySelectorAll('.topic-button').forEach(button => {
       const topic = button.getAttribute('data-topic');
       button.addEventListener('click', () => {
@@ -106,39 +99,37 @@ const books = posts.map(post => ({
     });
   }
 
-  // Attach listeners on first load
+  // ✅ Khởi động ban đầu
   document.addEventListener("DOMContentLoaded", () => {
-    attachListeners();
+    initRecommend();
   });
 
-  // Fix BACK button issue (restore state / reattach events)
+  // ✅ Khi quay lại từ nút Back, chỉ reload lại phần #recommend-wrapper
   window.addEventListener("pageshow", async (event) => {
-  if (event.persisted) {
-    console.log("🔁 Back detected — refreshing #recommend-wrapper only");
+    if (event.persisted) {
+      console.log("🔁 BACK detected — refreshing #recommend-wrapper only");
 
-    try {
-      const response = await fetch(location.pathname);
-      const html = await response.text();
+      try {
+        const response = await fetch(location.pathname);
+        const html = await response.text();
+        const temp = document.createElement("div");
+        temp.innerHTML = html;
 
-      const temp = document.createElement("div");
-      temp.innerHTML = html;
+        const newSection = temp.querySelector("#recommend-wrapper");
+        const oldSection = document.querySelector("#recommend-wrapper");
 
-      const newRecommend = temp.querySelector("#recommend-wrapper");
-      const oldRecommend = document.querySelector("#recommend-wrapper");
+        if (newSection && oldSection) {
+          oldSection.replaceWith(newSection);
+          console.log("✅ Recommend section reloaded");
 
-      if (newRecommend && oldRecommend) {
-        oldRecommend.replaceWith(newRecommend);
-        console.log("✅ Recommend section reloaded");
-
-        // Re-run the script logic again (re-attach events)
-        // ⚠️ Option 1: call initRecommend() if your logic is in a function
-        // ⚠️ Option 2: move your logic into client:load component
+          // Gọi lại init sau khi DOM bị thay
+          initRecommend();
+        }
+      } catch (err) {
+        console.error("❌ Failed to reload recommend section:", err);
       }
-    } catch (err) {
-      console.error("❌ Failed to reload recommend section:", err);
     }
-  }
-});
+  });
 </script>
 
 <!-- Đưa data vào HTML an toàn -->
