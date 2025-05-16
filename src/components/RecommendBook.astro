@@ -37,36 +37,39 @@ const books = posts.map(post => ({
 </div>
 
 <script type="module">
-  const books = JSON.parse(`${JSON.stringify(books)}`);
-  const TOPICS = JSON.parse(`${JSON.stringify(TOPICS)}`);
-  const select = document.getElementById('topic-select');
-  const resultDiv = document.getElementById('recommend-result');
+  document.addEventListener('DOMContentLoaded', () => {
+    const books = JSON.parse(`${JSON.stringify(books)}`);
+    const TOPICS = JSON.parse(`${JSON.stringify(TOPICS)}`);
+    const select = document.getElementById('topic-select');
+    const resultDiv = document.getElementById('recommend-result');
 
-  select.addEventListener('change', () => {
-    const topic = select.value;
-    if (!topic) {
-      resultDiv.innerHTML = '';
-      return;
-    }
-    const tags = TOPICS[topic];
-    const filtered = books.filter(book => book.tags.some(tag => tags.includes(tag)));
-    if (filtered.length === 0) {
-      resultDiv.innerHTML = '<p>Không tìm thấy sách phù hợp.</p>';
-      return;
-    }
-    const book = filtered[Math.floor(Math.random() * filtered.length)];
-    resultDiv.innerHTML = `
-      <div class="recommend-card">
-        <h3 class="recommend-title">${book.title}</h3>
-        <p class="recommend-desc">${book.description}</p>
-        <div class="recommend-tags">
-          ${book.tags.map(tag => `<span class="recommend-tag">${tag}</span>`).join(' ')}
+    select.addEventListener('change', () => {
+      const topic = select.value;
+      if (!topic) {
+        resultDiv.innerHTML = '';
+        return;
+      }
+      const tags = TOPICS[topic];
+      const filtered = books.filter(book => book.tags.some(tag => tags.includes(tag)));
+      if (filtered.length === 0) {
+        resultDiv.innerHTML = '<p>Không tìm thấy sách phù hợp.</p>';
+        return;
+      }
+      const book = filtered[Math.floor(Math.random() * filtered.length)];
+      resultDiv.innerHTML = `
+        <div class="recommend-card">
+          <h3 class="recommend-title">${book.title}</h3>
+          <p class="recommend-desc">${book.description}</p>
+          <div class="recommend-tags">
+            ${book.tags.map(tag => `<span class="recommend-tag">${tag}</span>`).join(' ')}
+          </div>
+          <a href="${book.href}" class="recommend-link">Xem review →</a>
         </div>
-        <a href="${book.href}" class="recommend-link">Xem review →</a>
-      </div>
-    `;
+      `;
+    });
   });
 </script>
+
 
 <style>
 .recommend-container {
