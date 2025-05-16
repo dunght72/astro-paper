@@ -11,6 +11,7 @@ tags:
   - Nature
   - Masanobu Fukuoka
 description: "Cách làm nông “tự nhiên”, có điểm xuất phát lẫn điểm kết thúc trong sự tôn kính này, vô cùng con..."
+slug: "cuoc-cach-mang-mot-cong-rom-bi-quyet-nong-nghiep-tu-nhien-thay-doi-the-gioi"
 ---
 
 ## Table of contents
