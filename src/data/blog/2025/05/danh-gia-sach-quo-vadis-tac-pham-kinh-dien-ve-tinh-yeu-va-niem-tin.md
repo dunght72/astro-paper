@@ -1,7 +1,6 @@
 ---
 title: "Đánh Giá Sách Quo Vadis: Tác Phẩm Kinh Điển Về Tình Yêu Và Niềm Tin"
 pubDatetime: 2025-05-16T06:02:56.050Z
-slug: "danh-gia-sach-quo-vadis-tac-pham-kinh-dien-ve-tinh-yeu-va-niem-tin"
 tags:
   - Classics
   - Historical Fiction
