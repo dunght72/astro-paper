@@ -12,14 +12,13 @@ const TOPICS = {
 const topicList = Object.keys(TOPICS);
 
 // Lấy toàn bộ bài viết từ content collection 'blog'
-const posts = await getCollection('posts');
+const posts = await getCollection('blog');
 
 // Chuyển sang dạng đơn giản để truyền sang client
 const books = posts.map(post => ({
   title: post.data.title,
   tags: post.data.tags || [],
   description: post.data.description || '',
-  cover: post.data.cover || '',
   slug: post.slug,
 }));
 ---
@@ -59,7 +58,6 @@ const books = posts.map(post => ({
     resultDiv.innerHTML = `
       <div class="recommend-card">
         <h3 class="recommend-title">${book.title}</h3>
-        ${book.cover ? `<img src="${book.cover}" alt="${book.title}" class="recommend-cover" />` : ''}
         <p class="recommend-desc">${book.description}</p>
         <div class="recommend-tags">
           ${book.tags.map(tag => `<span class="recommend-tag">${tag}</span>`).join(' ')}
