@@ -12,7 +12,7 @@ import IconRss from "@/assets/icons/IconRss.svg";
 import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import { SITE } from "@/config";
 import { SOCIALS } from "@/constants";
-import RandomByTag from '../components/RandomByTag.astro'
+//import RandomByTag from '../components/RandomByTag.astro'
 const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
@@ -58,7 +58,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     </section>
 
     <Hr />
-    <RandomByTag />
+    //<RandomByTag />
     <Hr />
     {
       featuredPosts.length > 0 && (
