@@ -24,7 +24,7 @@ const books = posts.map(post => ({
 }));
 ---
 
-<div class="recommend-wrapper">
+<div id="recommend-wrapper">
   <h2 class="recommend-heading">📚 Hôm nay bạn muốn đọc gì?</h2>
 
   <div class="topic-buttons">
@@ -112,16 +112,33 @@ const books = posts.map(post => ({
   });
 
   // Fix BACK button issue (restore state / reattach events)
-  window.addEventListener("pageshow", (event) => {
-    if (event.persisted) {
-      console.log("🔄 BACK detected – resetting state");
-      resultDiv.innerHTML = "";
-      currentTopic = "";
-      currentFiltered = [];
-      currentBook = null;
-      attachListeners(); // Re-attach click events
+  window.addEventListener("pageshow", async (event) => {
+  if (event.persisted) {
+    console.log("🔁 Back detected — refreshing #recommend-wrapper only");
+
+    try {
+      const response = await fetch(location.pathname);
+      const html = await response.text();
+
+      const temp = document.createElement("div");
+      temp.innerHTML = html;
+
+      const newRecommend = temp.querySelector("#recommend-wrapper");
+      const oldRecommend = document.querySelector("#recommend-wrapper");
+
+      if (newRecommend && oldRecommend) {
+        oldRecommend.replaceWith(newRecommend);
+        console.log("✅ Recommend section reloaded");
+
+        // Re-run the script logic again (re-attach events)
+        // ⚠️ Option 1: call initRecommend() if your logic is in a function
+        // ⚠️ Option 2: move your logic into client:load component
+      }
+    } catch (err) {
+      console.error("❌ Failed to reload recommend section:", err);
     }
-  });
+  }
+});
 </script>
 
 <!-- Đưa data vào HTML an toàn -->
