@@ -45,27 +45,36 @@ const books = posts.map(post => ({
 
     select.addEventListener('change', () => {
       const topic = select.value;
-      if (!topic) {
-        resultDiv.innerHTML = '';
-        return;
-      }
+      resultDiv.innerHTML = '';
+
+      if (!topic) return;
+
       const tags = TOPICS[topic];
-      const filtered = books.filter(book => book.tags.some(tag => tags.includes(tag)));
+      const filtered = books.filter(book =>
+        book.tags.some(tag => tags.includes(tag))
+      );
+
       if (filtered.length === 0) {
         resultDiv.innerHTML = '<p>Không tìm thấy sách phù hợp.</p>';
         return;
       }
+
       const book = filtered[Math.floor(Math.random() * filtered.length)];
+
       resultDiv.innerHTML = `
-        <div class="recommend-card">
+        <div class="recommend-card recommend-fade-in">
           <h3 class="recommend-title">${book.title}</h3>
           <p class="recommend-desc">${book.description}</p>
           <div class="recommend-tags">
             ${book.tags.map(tag => `<span class="recommend-tag">${tag}</span>`).join(' ')}
           </div>
-          <a href="${book.href}" class="recommend-link">Xem review →</a>
+          <p style="font-style: italic; color: #64748b;">Đang chuyển đến bài viết...</p>
         </div>
       `;
+
+      setTimeout(() => {
+        window.location.href = book.href;
+      }, 3000); // ⏳ 3 giây rồi chuyển
     });
   });
 </script>
@@ -124,5 +133,13 @@ const books = posts.map(post => ({
   color: #2563eb;
   text-decoration: underline;
   font-weight: 500;
+}
+.recommend-fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 </style>
