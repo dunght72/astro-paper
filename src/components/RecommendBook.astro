@@ -41,21 +41,27 @@ const books = posts.map(post => ({
 <script type="module">
   const books = JSON.parse(document.getElementById('books-data').textContent);
   const TOPICS = JSON.parse(document.getElementById('topics-data').textContent);
-
   const resultDiv = document.getElementById('recommend-result');
 
   let currentTopic = "";
   let currentFiltered = [];
   let currentBook = null;
 
+  console.log("🔁 INIT: Loaded books:", books.length);
+  console.log("🔁 INIT: Topics:", Object.keys(TOPICS));
+
   function pickRandom() {
     if (!currentFiltered.length) return null;
-    return currentFiltered[Math.floor(Math.random() * currentFiltered.length)];
+    const pick = currentFiltered[Math.floor(Math.random() * currentFiltered.length)];
+    console.log("🎲 Random pick:", pick.title);
+    return pick;
   }
 
   function showBook(book) {
     currentBook = book;
-  
+
+    console.log("📚 Show book:", book.title);
+
     resultDiv.innerHTML = `
       <div class="fade-in">
         <p class="book-title">📖 ${book.title}</p>
@@ -65,40 +71,55 @@ const books = posts.map(post => ({
         </div>
       </div>
     `;
-  
-    document.getElementById("change-book-btn").addEventListener("click", () => {
-      const newBook = pickRandom();
-      if (newBook && newBook.href !== currentBook.href) {
-        showBook(newBook);
-      }
+
+    const changeBtn = document.getElementById("change-book-btn");
+    if (changeBtn) {
+      changeBtn.addEventListener("click", () => {
+        const newBook = pickRandom();
+        if (newBook && newBook.href !== currentBook.href) {
+          showBook(newBook);
+        }
+      });
+    }
+  }
+
+  function attachListeners() {
+    document.querySelectorAll('.topic-button').forEach(button => {
+      const topic = button.getAttribute('data-topic');
+      button.addEventListener('click', () => {
+        console.log("👉 Clicked topic:", topic);
+        currentTopic = topic;
+        const tags = TOPICS[currentTopic];
+        currentFiltered = books.filter(book =>
+          book.tags.some(tag => tags.includes(tag))
+        );
+        console.log("🔎 Filtered count:", currentFiltered.length);
+
+        if (currentFiltered.length === 0) {
+          resultDiv.innerHTML = '<p>Không tìm thấy sách phù hợp.</p>';
+          return;
+        }
+
+        const randomBook = pickRandom();
+        showBook(randomBook);
+      });
     });
   }
 
-  document.querySelectorAll('.topic-button').forEach(button => {
-    button.addEventListener('click', () => {
-      currentTopic = button.getAttribute('data-topic');
-      const tags = TOPICS[currentTopic];
-      currentFiltered = books.filter(book =>
-        book.tags.some(tag => tags.includes(tag))
-      );
-
-      if (currentFiltered.length === 0) {
-        resultDiv.innerHTML = '<p>Không tìm thấy sách phù hợp.</p>';
-        return;
-      }
-
-      const randomBook = pickRandom();
-      showBook(randomBook);
-    });
+  // Attach listeners on first load
+  document.addEventListener("DOMContentLoaded", () => {
+    attachListeners();
   });
+
+  // Fix BACK button issue (restore state / reattach events)
   window.addEventListener("pageshow", (event) => {
-    // Nếu quay lại bằng history (back/forward)
     if (event.persisted) {
-      // Reset lại phần hiển thị & biến
-      document.getElementById("recommend-result").innerHTML = "";
-      currentBook = null;
-      currentFiltered = [];
+      console.log("🔄 BACK detected – resetting state");
+      resultDiv.innerHTML = "";
       currentTopic = "";
+      currentFiltered = [];
+      currentBook = null;
+      attachListeners(); // Re-attach click events
     }
   });
 </script>
