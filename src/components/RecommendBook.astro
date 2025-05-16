@@ -37,47 +37,50 @@ const books = posts.map(post => ({
 </div>
 
 <script type="module">
-  document.addEventListener('DOMContentLoaded', () => {
-    const books = JSON.parse(`${JSON.stringify(books)}`);
-    const TOPICS = JSON.parse(`${JSON.stringify(TOPICS)}`);
-    const select = document.getElementById('topic-select');
-    const resultDiv = document.getElementById('recommend-result');
+  const books = JSON.parse(document.getElementById('books-data').textContent);
+  const TOPICS = JSON.parse(document.getElementById('topics-data').textContent);
 
-    select.addEventListener('change', () => {
-      const topic = select.value;
-      resultDiv.innerHTML = '';
+  const select = document.getElementById('topic-select');
+  const resultDiv = document.getElementById('recommend-result');
 
-      if (!topic) return;
+  select.addEventListener('change', () => {
+    const topic = select.value;
+    resultDiv.innerHTML = '';
 
-      const tags = TOPICS[topic];
-      const filtered = books.filter(book =>
-        book.tags.some(tag => tags.includes(tag))
-      );
+    if (!topic) return;
 
-      if (filtered.length === 0) {
-        resultDiv.innerHTML = '<p>Không tìm thấy sách phù hợp.</p>';
-        return;
-      }
+    const tags = TOPICS[topic];
+    const filtered = books.filter(book =>
+      book.tags.some(tag => tags.includes(tag))
+    );
 
-      const book = filtered[Math.floor(Math.random() * filtered.length)];
+    if (filtered.length === 0) {
+      resultDiv.innerHTML = '<p>Không tìm thấy sách phù hợp.</p>';
+      return;
+    }
 
-      resultDiv.innerHTML = `
-        <div class="recommend-card recommend-fade-in">
-          <h3 class="recommend-title">${book.title}</h3>
-          <p class="recommend-desc">${book.description}</p>
-          <div class="recommend-tags">
-            ${book.tags.map(tag => `<span class="recommend-tag">${tag}</span>`).join(' ')}
-          </div>
-          <p style="font-style: italic; color: #64748b;">Đang chuyển đến bài viết...</p>
+    const book = filtered[Math.floor(Math.random() * filtered.length)];
+
+    resultDiv.innerHTML = `
+      <div class="recommend-card recommend-fade-in">
+        <h3 class="recommend-title">${book.title}</h3>
+        <p class="recommend-desc">${book.description}</p>
+        <div class="recommend-tags">
+          ${book.tags.map(tag => `<span class="recommend-tag">${tag}</span>`).join(' ')}
         </div>
-      `;
+        <p style="font-style: italic; color: #64748b;">Đang chuyển đến bài viết...</p>
+      </div>
+    `;
 
-      setTimeout(() => {
-        window.location.href = book.href;
-      }, 3000); // ⏳ 3 giây rồi chuyển
-    });
+    setTimeout(() => {
+      window.location.href = book.href;
+    }, 3000);
   });
 </script>
+
+<!-- Đưa data vào HTML an toàn -->
+<script id="books-data" type="application/json" set:html={JSON.stringify(books)}></script>
+<script id="topics-data" type="application/json" set:html={JSON.stringify(TOPICS)}></script>
 
 
 <style>
