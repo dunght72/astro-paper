@@ -1,7 +1,6 @@
 ---
 title: "Đánh Giá Sách Người Lạ Trong Nhà: Bí Ẩn Và Hồi Hộp Đến Trang Cuối Cùng"
 pubDatetime: 2025-05-16T07:01:32.957Z
-slug: "danh-gia-sach-nguoi-la-trong-nha-bi-an-va-hoi-hop-den-trang-cuoi-cung"
 tags:
   - Fiction
   - Thriller
