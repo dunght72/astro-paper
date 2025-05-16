@@ -1,5 +1,5 @@
 ---
-import { useState } from 'react';
+import { getCollection } from 'astro:content';
 
 // Chủ đề và tags ánh xạ
 const TOPICS = {
@@ -9,60 +9,66 @@ const TOPICS = {
   // Thêm các chủ đề khác nếu cần
 };
 
-// Giả sử bạn import dữ liệu sách từ file JSON build sẵn (có thể sinh ra từ n8n)
-import books from '../data/books.json';
-
-// Lấy danh sách chủ đề
 const topicList = Object.keys(TOPICS);
 
-// Hàm recommend sách
-function recommendBook(topic) {
-  if (!topic) return null;
-  const tags = TOPICS[topic];
-  const filtered = books.filter(book =>
-    book.tags.some(tag => tags.includes(tag))
-  );
-  if (filtered.length === 0) return null;
-  // Chọn ngẫu nhiên 1 cuốn sách
-  return filtered[Math.floor(Math.random() * filtered.length)];
-}
+// Lấy toàn bộ bài viết từ content collection 'blog'
+const posts = await getCollection('posts');
 
-// State cho chủ đề và sách được chọn
-const [selectedTopic, setSelectedTopic] = useState('');
-const [recommended, setRecommended] = useState(null);
-
-function handleChange(e) {
-  const topic = e.target.value;
-  setSelectedTopic(topic);
-  setRecommended(recommendBook(topic));
-}
+// Chuyển sang dạng đơn giản để truyền sang client
+const books = posts.map(post => ({
+  title: post.data.title,
+  tags: post.data.tags || [],
+  description: post.data.description || '',
+  cover: post.data.cover || '',
+  slug: post.slug,
+}));
 ---
 
 <div class="recommend-container">
   <label for="topic-select" class="recommend-label">Chọn chủ đề:</label>
-  <select id="topic-select" class="recommend-select" on:change={handleChange}>
+  <select id="topic-select" class="recommend-select">
     <option value="">-- Chọn --</option>
     {topicList.map(topic => (
-      <option value={topic} selected={selectedTopic === topic}>{topic}</option>
+      <option value={topic}>{topic}</option>
     ))}
   </select>
 
-  {recommended && (
-    <div class="recommend-card">
-      <h3 class="recommend-title">{recommended.title}</h3>
-      {recommended.cover && (
-        <img src={recommended.cover} alt={recommended.title} class="recommend-cover" />
-      )}
-      <p class="recommend-desc">{recommended.description}</p>
-      <div class="recommend-tags">
-        {recommended.tags.map(tag => (
-          <span class="recommend-tag">{tag}</span>
-        ))}
-      </div>
-      <a href={`/books/${recommended.slug}`} class="recommend-link">Xem review</a>
-    </div>
-  )}
+  <div id="recommend-result"></div>
 </div>
+
+<script type="module">
+  // Truyền dữ liệu books và topics sang JS
+  const books = /** @type {any[]} */ ({JSON.stringify(books)});
+  const TOPICS = /** @type {Record<string, string[]>} */ ({JSON.stringify(TOPICS)});
+  const select = document.getElementById('topic-select');
+  const resultDiv = document.getElementById('recommend-result');
+
+  select.addEventListener('change', () => {
+    const topic = select.value;
+    if (!topic) {
+      resultDiv.innerHTML = '';
+      return;
+    }
+    const tags = TOPICS[topic];
+    const filtered = books.filter(book => book.tags.some(tag => tags.includes(tag)));
+    if (filtered.length === 0) {
+      resultDiv.innerHTML = '<p>Không tìm thấy sách phù hợp.</p>';
+      return;
+    }
+    const book = filtered[Math.floor(Math.random() * filtered.length)];
+    resultDiv.innerHTML = `
+      <div class="recommend-card">
+        <h3 class="recommend-title">${book.title}</h3>
+        ${book.cover ? `<img src="${book.cover}" alt="${book.title}" class="recommend-cover" />` : ''}
+        <p class="recommend-desc">${book.description}</p>
+        <div class="recommend-tags">
+          ${book.tags.map(tag => `<span class="recommend-tag">${tag}</span>`).join(' ')}
+        </div>
+        <a href="/blog/${book.slug}" class="recommend-link">Xem review</a>
+      </div>
+    `;
+  });
+</script>
 
 <style>
 .recommend-container {
