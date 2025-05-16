@@ -91,6 +91,16 @@ const books = posts.map(post => ({
       showBook(randomBook);
     });
   });
+  window.addEventListener("pageshow", (event) => {
+    // Nếu quay lại bằng history (back/forward)
+    if (event.persisted) {
+      // Reset lại phần hiển thị & biến
+      document.getElementById("recommend-result").innerHTML = "";
+      currentBook = null;
+      currentFiltered = [];
+      currentTopic = "";
+    }
+  });
 </script>
 
 <!-- Đưa data vào HTML an toàn -->
