@@ -16,9 +16,9 @@ slug: "cuoc-cach-mang-mot-cong-rom-bi-quyet-nong-nghiep-tu-nhien-thay-doi-the-gi
 
 ## Table of contents
 
- ![Ảnh minh họa](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1630638556i/24949196.jpg) 
-
 ## 🌿 Cuộc cách mạng một-cọng-rơm: Triết lý sống xanh giản đơn
+
+![Ảnh minh họa](https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1630638556i/24949196.jpg) 
 
 ## ✨ Mở đầu  
 Cuốn sách *Cuộc cách mạng một-cọng-rơm* của Masanobu Fukuoka không chỉ là một tác phẩm về nông nghiệp mà còn là một hành trình dẫn dắt người đọc trở về với sự chân phương của thiên nhiên. Lối viết gần gũi nhưng sâu sắc của ông khiến người ta không khỏi suy ngẫm về cách chúng ta đang đối xử với đất mẹ và chính cuộc sống của mình. Đây là một cuốn sách đáng đọc cho bất kỳ ai khao khát tìm kiếm sự hòa hợp giữa con người và tự nhiên.
