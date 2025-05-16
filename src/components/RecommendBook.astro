@@ -44,30 +44,51 @@ const books = posts.map(post => ({
 
   const resultDiv = document.getElementById('recommend-result');
 
+  let currentTopic = "";
+  let currentFiltered = [];
+  let currentBook = null;
+
+  function pickRandom() {
+    if (!currentFiltered.length) return null;
+    return currentFiltered[Math.floor(Math.random() * currentFiltered.length)];
+  }
+
+  function showBook(book) {
+    currentBook = book;
+  
+    resultDiv.innerHTML = `
+      <div class="fade-in">
+        <p class="book-title">📖 ${book.title}</p>
+        <div class="recommend-actions">
+          <a href="${book.href}" class="recommend-btn">📖 Xem ngay</a>
+          <button id="change-book-btn" class="recommend-btn alt">🔁 Đổi sách</button>
+        </div>
+      </div>
+    `;
+  
+    document.getElementById("change-book-btn").addEventListener("click", () => {
+      const newBook = pickRandom();
+      if (newBook && newBook.href !== currentBook.href) {
+        showBook(newBook);
+      }
+    });
+  }
+
   document.querySelectorAll('.topic-button').forEach(button => {
     button.addEventListener('click', () => {
-      const topic = button.getAttribute('data-topic');
-      const tags = TOPICS[topic];
-
-      const filtered = books.filter(book =>
+      currentTopic = button.getAttribute('data-topic');
+      const tags = TOPICS[currentTopic];
+      currentFiltered = books.filter(book =>
         book.tags.some(tag => tags.includes(tag))
       );
 
-      if (filtered.length === 0) {
-        resultDiv.innerHTML = `<p>Không tìm thấy sách phù hợp.</p>`;
+      if (currentFiltered.length === 0) {
+        resultDiv.innerHTML = '<p>Không tìm thấy sách phù hợp.</p>';
         return;
       }
 
-      const book = filtered[Math.floor(Math.random() * filtered.length)];
-
-      resultDiv.innerHTML = `
-        <p class="book-title">📖 <a href="${book.href}" class="recommend-link">${book.title}</a></p>
-        <p class="recommend-sub">Đang chuyển đến bài viết...</p>
-      `;
-
-      setTimeout(() => {
-        window.location.href = book.href;
-      }, 3000);
+      const randomBook = pickRandom();
+      showBook(randomBook);
     });
   });
 </script>
@@ -78,6 +99,23 @@ const books = posts.map(post => ({
 
 
 <style>
+.recommend-wrapper {
+  padding: 2rem;
+  background-color: var(--theme-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 640px;
+}
+
+.recommend-heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
 .topic-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -97,7 +135,6 @@ const books = posts.map(post => ({
   cursor: pointer;
   transition: all 0.2s ease;
 }
-
 .topic-button:hover {
   background-color: var(--primary, #3b82f6);
   color: white;
@@ -108,13 +145,44 @@ const books = posts.map(post => ({
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--primary);
+  margin-bottom: 1rem;
 }
 
-.recommend-sub {
-  text-align: center;
-  font-style: italic;
-  font-size: 0.9rem;
-  color: var(--text-light);
-  margin-top: 0.3rem;
+.recommend-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.recommend-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: white;
+  background-color: var(--primary, #3b82f6);
+  border: none;
+}
+.recommend-btn.alt {
+  background-color: #6b7280;
+}
+.recommend-btn:hover {
+  opacity: 0.9;
+}
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 </style>
