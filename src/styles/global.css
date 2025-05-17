@@ -57,3 +57,100 @@ html[data-theme="dark"] {
 .active-nav {
   @apply underline decoration-wavy decoration-2 underline-offset-4;
 }
+
+/* ===== Retro Underline for Post Titles ===== */
+.post-title a {
+  position: relative;
+  display: inline-block;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.post-title a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.post-title a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+.hero-title {
+  display: inline-block;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 2rem;
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation:
+    typing 2s steps(20, end) forwards,
+    blink 0.7s infinite;
+}
+
+body {
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  background-repeat: repeat;
+  background-color: #fcfcfc;
+}
+.post-title::before {
+  content: '📖 ';
+  opacity: 0.7;
+  margin-right: 4px;
+}
+
+.button {
+  background: #111;
+  color: #fff;
+  border: 1px solid #555;
+  font-family: monospace;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  transition: box-shadow 0.2s ease-in;
+}
+
+.button:hover {
+  box-shadow: 0 0 8px #aaa;
+}
+p:first-of-type::first-letter {
+  font-size: 2rem;
+  float: left;
+  line-height: 1;
+  padding-right: 4px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.post-list > * {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp 0.3s ease-out forwards;
+}
+.post-list > *:nth-child(1) { animation-delay: 0.1s }
+.post-list > *:nth-child(2) { animation-delay: 0.2s }
+.post-list > *:nth-child(3) { animation-delay: 0.3s }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
