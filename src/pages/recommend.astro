@@ -39,4 +39,106 @@ const books = posts.map(post => ({
 
   <!-- Gắn lại script đã ổn định -->
   <script type="module" src="/scripts/recommend.js"></script>
+  <style>
+body {
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  background-repeat: repeat;
+  background-size: auto;
+}
+.recommend-wrapper {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  background-color: var(--theme-bg, #f9fafb);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.recommend-heading {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--text, #1f2937);
+}
+
+.topic-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.topic-button {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--primary-light, #e0e7ff);
+  border: 1px solid var(--primary, #3b82f6);
+  color: var(--primary-dark, #1e40af);
+  font-size: 0.95rem;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.topic-button:hover {
+  background-color: var(--primary, #3b82f6);
+  color: white;
+}
+
+#recommend-result {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.book-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.recommend-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.recommend-btn {
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  font-weight: 500;
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  border: none;
+  transition: background 0.2s ease;
+}
+
+.recommend-btn.alt {
+  background-color: #6b7280;
+}
+
+.recommend-btn:hover {
+  opacity: 0.9;
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
 </Layout>
