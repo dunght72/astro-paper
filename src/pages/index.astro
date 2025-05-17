@@ -111,3 +111,21 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     }
   });
 </script>
+<style>
+.recommend-banner {
+  display: inline-block;
+  background: var(--primary-light);
+  color: var(--primary);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: 1px solid var(--primary);
+  transition: background 0.2s;
+}
+.recommend-banner:hover {
+  background: var(--primary);
+  color: white;
+}
+</style>
