@@ -91,7 +91,7 @@ html[data-theme="dark"] {
   50% { border-color: transparent }
 }
 
-.hero-title {
+#hero h1 {
   display: inline-block;
   font-family: monospace;
   font-weight: bold;
@@ -105,16 +105,7 @@ html[data-theme="dark"] {
     blink 0.7s infinite;
 }
 
-body {
-  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-  background-repeat: repeat;
-  background-color: #fcfcfc;
-}
-.post-title::before {
-  content: '📖 ';
-  opacity: 0.7;
-  margin-right: 4px;
-}
+
 
 .button {
   background: #111;
@@ -128,14 +119,6 @@ body {
 
 .button:hover {
   box-shadow: 0 0 8px #aaa;
-}
-p:first-of-type::first-letter {
-  font-size: 2rem;
-  float: left;
-  line-height: 1;
-  padding-right: 4px;
-  font-weight: bold;
-  color: var(--primary);
 }
 
 .post-list > * {
