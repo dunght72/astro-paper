@@ -12,7 +12,7 @@ import IconRss from "@/assets/icons/IconRss.svg";
 import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import { SITE } from "@/config";
 import { SOCIALS } from "@/constants";
-import RecommendBook from '@/components/RecommendBook.astro';
+//import RecommendBook from '@/components/RecommendBook.astro';
 const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
@@ -58,7 +58,9 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     </section>
 
     <Hr />
-<RecommendBook />
+    <section class="section" style="text-align:center;">
+  <a href="/recommend" class="recommend-banner">📚 Gợi ý sách hôm nay →</a>
+</section>
     <Hr />
     {
       featuredPosts.length > 0 && (
