@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { getPath } from '@/utils/getPath';
+
+const TOPICS = {
+  "Trinh thám": ["Crime", "Detective"],
+  "Tình cảm": ["Romance", "Love"],
+  "Khoa học": ["Science", "Non-fiction"]
+};
+
+const posts = await getCollection('blog');
+
+const books = posts.map(post => ({
+  title: post.data.title,
+  tags: post.data.tags || [],
+  description: post.data.description || '',
+  href: getPath(post.id, post.filePath),
+}));
+---
+
+<Layout>
+  <div class="recommend-wrapper">
+    <h1 class="recommend-heading">📚 Hôm nay bạn muốn đọc gì?</h1>
+
+    <div class="topic-buttons">
+      {Object.keys(TOPICS).map(topic => (
+        <button type="button" class="topic-button" data-topic={topic}>
+          {topic}
+        </button>
+      ))}
+    </div>
+
+    <div id="recommend-result"></div>
+  </div>
+
+  <script type="application/json" id="books-data" set:html={JSON.stringify(books)}></script>
+  <script type="application/json" id="topics-data" set:html={JSON.stringify(TOPICS)}></script>
+
+  <!-- Gắn lại script đã ổn định -->
+  <script type="module" src="/scripts/recommend.js"></script>
+</Layout>
